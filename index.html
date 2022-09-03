@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="modulo css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="fundo">
-        <h1>Nívea Natalia</h1>
         <div class="calculadora">
             <h1>Calculadora</h1>
             <p id="resultado"></p>
@@ -51,15 +51,18 @@
            var numero = document.getElementById('resultado').innerHTML;
           document.getElementById('resultado').innerHTML = numero + num; 
         }
+
         function clean()
         {
             document.getElementById('resultado').innerHTML = ""
         }
+
         function back()
         {
             var resultado =  document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = resultado.substring(0,resultado.length -1);
         }
+
         function calcular()
         {
             var resultado =  document.getElementById('resultado').innerHTML;
